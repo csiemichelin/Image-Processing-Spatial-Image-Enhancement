@@ -56,8 +56,7 @@
 &emsp;&emsp;Step1 : 利用 mset 將 nj 矩陣初始為 0    
 &emsp;&emsp;Step2 : 計算 gray level 為 rk 的 pixel 個數並存在 nk 中    
 &emsp;&emsp;Step3 : 計算出現機率(Pr) = 出現次數(nj) / 像素總數 (n)    
-&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率**乘以 255**，得到均衡化值   
-&emsp;&emsp;&emsp;&emsp;，即 Sk[i] = Pr[i] * maxG ;     
+&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率**乘以 255**，得到均衡化值，即 Sk[i] = Pr[i] * maxG ;   
 &emsp;&emsp;Step5 : 再將所有的 Sk[i]做 sumation    
 &emsp;&emsp;Step6 : 將 Sk 從 double 直接轉成 int，可以捨去浮點數的部分   
 &emsp;&emsp;Step7 : 最後將均衡化值寫回新的像素中   
@@ -72,3 +71,6 @@
 &emsp;&emsp;src.at<uchar> //存取 src 一個 pixel 的 gray level  
 &emsp;&emsp;dst.at<uchar> //存取 dst 一個 pixel 的 gray level  
 &emsp;&emsp;mask //Laplacian mask 鄰域，差值越大凸顯臨邊  
+&emsp;(4) 程式邏輯 :  
+&emsp;&emsp;我所使用的 Laplacian mask 有以下兩種:  
+&emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果saturate_cast 函數防止資料溢位。  
