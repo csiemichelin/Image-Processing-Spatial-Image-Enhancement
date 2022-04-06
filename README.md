@@ -65,7 +65,7 @@
 &emsp;(1) 目的 : 與 smooth spatial filters 相反，主要用在 edge detection 上，也就是把影像中，物體的邊界找出來，利用二階微分實現Laplacian operator   
 &emsp;(2) 公式 :      
 &emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:  
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/3.PNG" width="300" height="150">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/3.PNG" width="300" height="100">   
 &emsp;&emsp;最後代入 Laplacian operator 得到:  
 &emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/4.PNG" width="400" height="100">   
 &emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:  
