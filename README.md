@@ -69,9 +69,9 @@
 &emsp;&emsp;最後代入 Laplacian operator 得到:  
 &emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/4.PNG" width="400" height="150">   
 &emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:  
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/5.PNG" width="500" height="70">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/5.PNG" width="500" height="100">   
 &emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為負的去做，其四鄰域化簡後的一般式為:   
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/6.PNG" width="400" height="150">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/6.PNG" width="400" height="100">   
 &emsp;(3) 變數宣告 :  
 &emsp;&emsp;src.at<uchar> //存取 src 一個 pixel 的 gray level  
 &emsp;&emsp;dst.at<uchar> //存取 dst 一個 pixel 的 gray level  
