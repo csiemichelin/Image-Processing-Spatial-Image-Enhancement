@@ -38,4 +38,4 @@
 &emsp;&emsp;double G //gamma 值     
 &emsp;&emsp;int s // c * pow(r, G);     
 &emsp;(4) 程式邏輯 :   
-&emsp;&emsp;根據圖片的gray level調整pixel的亮度，若圖片偏黑，則G<1可以調亮;若圖片偏白，則 G>1 可以調暗，再用以上的公式完成power-law函數。   
+&emsp;&emsp;根據圖片的gray level調整pixel的亮度，若圖片偏黑，則G<1可以調亮;若圖片偏白，則 G>1 可以調暗，再用以上的公式完成power-law。   
