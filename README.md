@@ -43,7 +43,7 @@
 **4. histogram equalization**   
 &emsp;(1) 目的 : 將一些像是 dark , bright , low-contrast 的 image 轉成 high-contrast image。     
 &emsp;(2) 公式 :   
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/2.PNG" width="300" height="200">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/2.PNG" width="300" height="150">   
 &emsp;(3) 變數宣告 :   
 &emsp;&emsp;uchar* readImage //存放讀取的圖像  
 &emsp;&emsp;uchar* writeImage //存放寫回的圖像    
