@@ -56,8 +56,19 @@
 &emsp;&emsp;Step1 : 利用 mset 將 nj 矩陣初始為 0    
 &emsp;&emsp;Step2 : 計算 gray level 為 rk 的 pixel 個數並存在 nk 中    
 &emsp;&emsp;Step3 : 計算出現機率(Pr) = 出現次數(nj) / 像素總數 (n)    
-&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率乘以 255，得到均衡化值   
+&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率**乘以 255**，得到均衡化值   
 &emsp;&emsp;&emsp;&emsp;，即 Sk[i] = Pr[i] * maxG ;     
 &emsp;&emsp;Step5 : 再將所有的 Sk[i]做 sumation    
 &emsp;&emsp;Step6 : 將 Sk 從 double 直接轉成 int，可以捨去浮點數的部分   
 &emsp;&emsp;Step7 : 最後將均衡化值寫回新的像素中   
+**5. image sharpening using the Laplacian operator**
+&emsp;(1) 目的 : 與 smooth spatial filters 相反，主要用在 edge detection 上，也就是把影像中，物體的邊界找出來，利用二階微分實現Laplacian operator   
+&emsp;(2) 公式 :   
+&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:  
+&emsp;&emsp;最後代入 Laplacian operator 得到:  
+&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:  
+&emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為負的去做，其四鄰域化簡後的一般式為:   
+&emsp;(3) 變數宣告 :  
+&emsp;&emsp;src.at<uchar> //存取 src 一個 pixel 的 gray level  
+&emsp;&emsp;dst.at<uchar> //存取 dst 一個 pixel 的 gray level  
+&emsp;&emsp;mask //Laplacian mask 鄰域，差值越大凸顯臨邊  
