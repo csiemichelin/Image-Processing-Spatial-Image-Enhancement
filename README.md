@@ -67,7 +67,7 @@
 &emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:  
 &emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/3.PNG" width="300" height="150">   
 &emsp;&emsp;最後代入 Laplacian operator 得到:  
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/4.PNG" width="400" height="150">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/4.PNG" width="400" height="100">   
 &emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:  
 &emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/5.PNG" width="500" height="100">   
 &emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為負的去做，其四鄰域化簡後的一般式為:   
@@ -79,4 +79,23 @@
 &emsp;(4) 程式邏輯 :  
 &emsp;&emsp;我所使用的 Laplacian mask 有以下兩種:  
  &emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/7.PNG" width="300" height="150">   
-&emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果saturate_cast 函數防止資料溢位。  
+&emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果saturate_cast 函數防止資料溢位。   
+## Experimental results  
+&emsp;(1) 前置作業 :    
+&emsp;&emsp;(一) 作業系統 : Windows 10 家用版   
+&emsp;&emsp;(二) Visual studio 版本 : Visual Studio 2019   
+&emsp;&emsp;(三) OpenCV 版本 : OpenCV 4.5.3   
+&emsp;&emsp;(四) 環境架設 :      
+&emsp;&emsp;&emsp;https://forum.gamer.com.tw/C.php?bsn=60292&snA=6494 
+&emsp;(2) power-law (gamma) transformation(左:原圖，右:銳化或等化後的圖)    
+&emsp;&emsp;(一) Jetplane.bmp : G=1.6     
+&emsp;&emsp;(二) Lake.bmp : G=0.45   
+&emsp;&emsp;(三) Peppers.bmp : G=4.1    
+&emsp;(3) histogram equalization(左:原圖，右:銳化或等化後的圖)   
+&emsp;&emsp;(一) Jetplane.bmp   
+&emsp;&emsp;(二) Lake.bmp  
+&emsp;&emsp;(三) Peppers.bmp   
+&emsp;(4) image sharpening using the Laplacian operator(左:原圖，右:銳化或等化後的圖)   
+&emsp;&emsp;(一) Jetplane.bmp : mask = { -1, -1, -1, -1, 8, -1, -1, -1, -1 }    
+&emsp;&emsp;(二) Lake.bmp : mask = { -1, -1, -1, -1, 8, -1, -1, -1, -1 }     
+&emsp;&emsp;(三) Peppers.bmp : mask = { 0, -1, 0, -1, 4, -1, 0, -1, 0 }     
