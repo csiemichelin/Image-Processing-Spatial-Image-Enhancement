@@ -56,7 +56,7 @@
 &emsp;&emsp;Step1 : 利用 mset 將 nj 矩陣初始為 0    
 &emsp;&emsp;Step2 : 計算 gray level 為 rk 的 pixel 個數並存在 nk 中    
 &emsp;&emsp;Step3 : 計算出現機率(Pr) = 出現次數(nj) / 像素總數 (n)    
-&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率乘以 255，得到均衡化值
+&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率乘以 255，得到均衡化值   
 &emsp;&emsp;&emsp;&emsp;，即 Sk[i] = Pr[i] * maxG ;     
 &emsp;&emsp;Step5 : 再將所有的 Sk[i]做 sumation    
 &emsp;&emsp;Step6 : 將 Sk 從 double 直接轉成 int，可以捨去浮點數的部分   
