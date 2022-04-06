@@ -89,7 +89,7 @@
 &emsp;&emsp;&emsp;https://forum.gamer.com.tw/C.php?bsn=60292&snA=6494 
 &emsp;(2) power-law (gamma) transformation(左:原圖，右:銳化或等化後的圖)    
 &emsp;&emsp;(一) Jetplane.bmp : G=1.6    
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/res_image/1.png" width="800" height="400">    
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/res_image/1.png" width="500" height="150">    
 &emsp;&emsp;(二) Lake.bmp : G=0.45   
 &emsp;&emsp;(三) Peppers.bmp : G=4.1    
 &emsp;(3) histogram equalization(左:原圖，右:銳化或等化後的圖)   
