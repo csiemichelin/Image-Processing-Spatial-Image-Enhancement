@@ -61,7 +61,7 @@
 &emsp;&emsp;Step5 : 再將所有的 Sk[i]做 sumation    
 &emsp;&emsp;Step6 : 將 Sk 從 double 直接轉成 int，可以捨去浮點數的部分   
 &emsp;&emsp;Step7 : 最後將均衡化值寫回新的像素中   
-**5. image sharpening using the Laplacian operator**
+**5. image sharpening using the Laplacian operator**   
 &emsp;(1) 目的 : 與 smooth spatial filters 相反，主要用在 edge detection 上，也就是把影像中，物體的邊界找出來，利用二階微分實現Laplacian operator   
 &emsp;(2) 公式 :   
 &emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:  
