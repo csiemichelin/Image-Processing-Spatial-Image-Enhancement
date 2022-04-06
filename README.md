@@ -40,7 +40,7 @@
 &emsp;&emsp;int s // c * pow(r, G);     
 &emsp;(4) 程式邏輯 :   
 &emsp;&emsp;根據圖片的gray level調整pixel的亮度，若圖片偏黑，則G<1可以調亮;若圖片偏白，則 G>1 可以調暗，再用以上的公式完成power-law。   
-**4. histogram equalization**
+**4. histogram equalization**   
 &emsp;(1) 目的 : 將一些像是 dark , bright , low-contrast 的 image 轉成 high-contrast image。     
 &emsp;(2) 公式 :   
 &emsp;(3) 變數宣告 :   
@@ -56,7 +56,8 @@
 &emsp;&emsp;Step1 : 利用 mset 將 nj 矩陣初始為 0    
 &emsp;&emsp;Step2 : 計算 gray level 為 rk 的 pixel 個數並存在 nk 中    
 &emsp;&emsp;Step3 : 計算出現機率(Pr) = 出現次數(nj) / 像素總數 (n)    
-&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率乘以 255，得到均衡化值，即 Sk[i] = Pr[i] * maxG ;     
+&emsp;&emsp;Step4 : 要將色彩空間範圍擴展為[0, 255] 共 256 個像素級數，就必須將原累計機率乘以 255，得到均衡化值
+&emsp;&emsp;&emsp;&emsp;，即 Sk[i] = Pr[i] * maxG ;     
 &emsp;&emsp;Step5 : 再將所有的 Sk[i]做 sumation    
 &emsp;&emsp;Step6 : 將 Sk 從 double 直接轉成 int，可以捨去浮點數的部分   
 &emsp;&emsp;Step7 : 最後將均衡化值寫回新的像素中   
