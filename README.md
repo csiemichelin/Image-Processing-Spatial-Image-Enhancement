@@ -43,7 +43,7 @@
 **4. histogram equalization**   
 &emsp;(1) 目的 : 將一些像是 dark , bright , low-contrast 的 image 轉成 high-contrast image。     
 &emsp;(2) 公式 :   
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/2.PNG" width="300" height="200">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/2.PNG" width="150" height="100">   
 &emsp;(3) 變數宣告 :   
 &emsp;&emsp;uchar* readImage //存放讀取的圖像  
 &emsp;&emsp;uchar* writeImage //存放寫回的圖像    
@@ -67,11 +67,11 @@
 &emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:  
 &emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/3.PNG" width="300" height="200">   
 &emsp;&emsp;最後代入 Laplacian operator 得到:  
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/4.PNG" width="300" height="200">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/4.PNG" width="400" height="200">   
 &emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:  
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/5.PNG" width="300" height="200">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/5.PNG" width="400" height="200">   
 &emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為負的去做，其四鄰域化簡後的一般式為:   
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/6.PNG" width="300" height="200">   
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/6.PNG" width="400" height="200">   
 &emsp;(3) 變數宣告 :  
 &emsp;&emsp;src.at<uchar> //存取 src 一個 pixel 的 gray level  
 &emsp;&emsp;dst.at<uchar> //存取 dst 一個 pixel 的 gray level  
