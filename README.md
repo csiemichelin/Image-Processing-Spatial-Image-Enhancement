@@ -31,7 +31,7 @@
 **3. power-law (gamma) transformation**   
 &emsp;(1) 目的 : 可處理 gray level 偏黑或偏白的情形，若 gamma 值小於 1 則可取代 log transformation。     
 &emsp;(2) 公式 :   
-&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/1.PNG" width="100" height="40">    
+&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/1.PNG" width="100" height="36">    
 &emsp;(3) 變數宣告 :    
 &emsp;&emsp;uchar* readImage //存放讀取的圖像   
 &emsp;&emsp;uchar* writeImage //存放寫回的圖像   
