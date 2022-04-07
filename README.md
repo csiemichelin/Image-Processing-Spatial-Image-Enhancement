@@ -4,7 +4,7 @@
  - [Data handed in](#Data handed in)
  - [Technical description](#Technical description)
  - [Experimental results](#Experimental results)  
- - 
+ 
 ## Data handed in  
 **1. Power_Law_Transformation 資料夾**  
 &emsp;Power_Law.cpp  
