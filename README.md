@@ -1,9 +1,9 @@
 # Spatial Image Enhancement
 
 ## 目錄
- - [Data handed in](#Data handed in)
- - [Technical description](#Technical description)
- - [Experimental results](#Experimental results)
+ - [環境設置與使用方法](#環境設置與使用方法)
+ - [介紹](#介紹)
+ - [Demo](#Demo)
 ## Data handed in
 **1. Power_Law_Transformation 資料夾**  
 &emsp;Power_Law.cpp  
