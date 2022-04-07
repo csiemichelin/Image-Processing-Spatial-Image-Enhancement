@@ -1,10 +1,10 @@
 # Spatial Image Enhancement
 
 ## 目錄
- - [Datahandedin](#Datahandedin)
- - [介紹](#介紹)
- - [Demo](#Demo)
-## Datahandedin
+ - [Data_handed_in](#Data_handed_in)
+ - [Technical_description](#Technical_description)
+ - [Experimental_results](#Experimental_results)
+## Data_handed_in
 **1. Power_Law_Transformation 資料夾**  
 &emsp;Power_Law.cpp  
 &emsp;Power_Law_Transformation.exe  
@@ -23,7 +23,7 @@
 &emsp;Jetplane.bmp   
 &emsp;Lake.bmp   
 &emsp;Peppers.bmp   
-## Technical description
+## Technical_description
 **1. showImage**   
 &emsp;(1) 目的 : 將圖像跟直方圖放在同一視窗。   
 **2. Draw**     
@@ -80,7 +80,7 @@
 &emsp;&emsp;我所使用的 Laplacian mask 有以下兩種:  
 &emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/7.PNG" width="300" height="150">   
 &emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果saturate_cast 函數防止資料溢位。
-## Experimental results  
+## Experimental_results  
 &emsp;(1) 前置作業 :    
 &emsp;&emsp;(一) 作業系統 : Windows 10 家用版   
 &emsp;&emsp;(二) Visual studio 版本 : Visual Studio 2019   
