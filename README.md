@@ -1,10 +1,10 @@
 # Spatial Image Enhancement
 
 ## 目錄
- - [Data handed in](#Data handed in)
+ - [Datahandedin](#Datahandedin)
  - [介紹](#介紹)
  - [Demo](#Demo)
-## Data handed in
+## Datahandedin
 **1. Power_Law_Transformation 資料夾**  
 &emsp;Power_Law.cpp  
 &emsp;Power_Law_Transformation.exe  
