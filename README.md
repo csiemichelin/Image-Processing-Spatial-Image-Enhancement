@@ -3,8 +3,7 @@
 ## 目錄
  - [Data handed in](#Data handed in)
  - [Technical description](#Technical description)
- - [Experimental results](Experimental results)
- 
+ - [Experimental results](#Experimental results)
 ## Data handed in
 **1. Power_Law_Transformation 資料夾**  
 &emsp;Power_Law.cpp  
@@ -80,7 +79,7 @@
 &emsp;(4) 程式邏輯 :  
 &emsp;&emsp;我所使用的 Laplacian mask 有以下兩種:  
 &emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Spatial_Image_Enhancement/blob/main/tech_image/7.PNG" width="300" height="150">   
-&emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果saturate_cast 函數防止資料溢位。   
+&emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果saturate_cast 函數防止資料溢位。
 ## Experimental results  
 &emsp;(1) 前置作業 :    
 &emsp;&emsp;(一) 作業系統 : Windows 10 家用版   
