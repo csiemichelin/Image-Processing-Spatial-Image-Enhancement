@@ -1,7 +1,7 @@
 # Spatial Image Enhancement
 
 ## 目錄
- - [環境設置與使用方法](#環境設置與使用方法)
+ - [Data handed in](#Data handed in)
  - [介紹](#介紹)
  - [Demo](#Demo)
 ## Data handed in
